@@ -26,5 +26,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add index.html
-          git commit index.html -m 'Re-build index.Rmd' || echo "No changes to commit"
+          git -m 'Re-build index.Rmd' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
